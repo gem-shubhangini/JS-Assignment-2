@@ -1,0 +1,32 @@
+form{
+    
+    width: 55%;
+    background-color: rgba(187, 0, 255, 0.159);
+    padding:2%;
+    position: relative;
+   margin-top: 5%;
+    left: 25%;
+}
+
+.name{
+    padding-left: 30px;
+}
+.error{
+    color: red;
+}
+table{
+    position: relative;
+    left: 15%;
+    width:70% !important;
+}
+
+table,th,td  {
+    border: 1px solid black;
+    
+    padding: 30px;
+    margin: 10px;
+  }
+ 
+  .TableHead{
+      background-color: black;
+  }
