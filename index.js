@@ -8,6 +8,7 @@ let fnerror = document.getElementById("fn-error");
 let lnerror = document.getElementById("ln-error");
 let emailerror = document.getElementById("email-error");
 let mobileerror = document.getElementById("mobile-error");
+let savebtn=document.getElementById("save-button");
 var alpha = /^[a-zA-Z\s]*$/;
 
 let i=0;
@@ -22,11 +23,12 @@ const Tablefilled = () => {
         details.forEach(detail => {
             tableBody.innerHTML += `
             <tr>
-        <td>${detail.FirstName} ${detail.LastName}</td>
+        <td><span>${detail.FirstName}</span><span>${detail.LastName}</span></td>
         <td>${detail.Gender}</td>
         <td>${detail.Email}</td>
         <td>${detail.Mobile}</td>
         <td><i onClick="deleteRow(this)" class="fas fa-trash-alt"></i></td>
+        <td><i onClick="editRow(this)" class="fa-solid fa-pen-to-square"></i></td>
         </tr>
         `
         })
@@ -37,7 +39,17 @@ let deleteRow=(e)=>{
     e.parentElement.parentElement.remove();
     i=i-1;
 }
-
+let editRow=(e)=>{
+   fname.value=e.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.firstElementChild.value;
+   lname.value=e.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.lastElementChild.value;
+    gender.value=e.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.value;
+    email.value=e.previousElementSibling.previousElementSibling.previousElementSibling.value;
+    mobile.value=e.previousElementSibling.previousElementSibling.value;
+    savebtn.addEventListener('click',()=>{
+    e.parentElement.remove();
+   
+})
+}
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
