@@ -40,11 +40,11 @@ let deleteRow=(e)=>{
     i=i-1;
 }
 let editRow=(e)=>{
-   fname.value=e.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.firstElementChild.value;
-   lname.value=e.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.lastElementChild.value;
-    gender.value=e.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.value;
-    email.value=e.previousElementSibling.previousElementSibling.previousElementSibling.value;
-    mobile.value=e.previousElementSibling.previousElementSibling.value;
+   fname.value=e.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.firstElementChild.value;
+   lname.value=e.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.lastElementChild.value;
+    gender.value=e.previousElementSibling.previousElementSibling.previousElementSibling.value;
+    email.value=e.previousElementSibling.previousElementSibling.value;
+    mobile.value=e.previousElementSibling.value;
     savebtn.addEventListener('click',()=>{
     e.parentElement.remove();
    
