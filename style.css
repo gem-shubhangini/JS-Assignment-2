@@ -1,0 +1,40 @@
+body{
+    display: flex;
+}
+
+form{
+    
+    width: 40%;
+    background-color: rgba(187, 0, 255, 0.159);
+    padding:2%;
+    position: relative;
+   margin-top: 5%;
+   left: 2%;
+}
+
+.name{
+    padding-left: 30px;
+}
+.error{
+    color: red;
+}
+table{
+    position: relative;
+   top: 65px;
+    left: 3%;
+    width:55% !important;
+}
+
+table,th,td  {
+    border: 1px solid black;
+    
+    padding: 30px;
+    margin: 10px;
+  }
+ 
+  .TableHead{
+      background-color: black;
+  }
+#save-button{
+    display: none;
+}
