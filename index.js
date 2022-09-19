@@ -27,8 +27,8 @@ const Tablefilled = () => {
         <td>${detail.Gender}</td>
         <td>${detail.Email}</td>
         <td>${detail.Mobile}</td>
-        <td><i onClick="deleteRow(this)" class="fas fa-trash-alt"></i></td>
         <td><i onClick="editRow(this)" class="fa-solid fa-pen-to-square"></i></td>
+        <td><i onClick="deleteRow(this)" class="fas fa-trash-alt"></i></td>
         </tr>
         `
         })
